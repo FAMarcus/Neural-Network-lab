@@ -2,7 +2,7 @@
 From basics to advanced about neural network and machine learning. 
 
 ## Construindo uma Rede Neural.
-Neste diretório colocarei arquivos que descrevem os meus passos no aprendizado e construção de uma rede neural utilizando a linguagem Python. Os conceitos de Rede Neural são, de certa forma, bem simples, envolvendo conceitos básicos de Álgebra Linear e Cálculo Diferencial. Traduzir estes conceitos para uma linguagem de programação apresenta algumas armadilhas, ligadas em parte à sintaxe da linguagem usada. Os arquivos aqui depositados foram escritos de maneira a destacar as minúcias exigidas por linguagem tão flexivel como a Python. Além disso, fui acrescentando complexidade a cada arquivo com o intuito de deixar o programa cada vez mais completo para programação em Deep Learning.
+Neste diretório colocarei arquivos que descrevem os meus passos no aprendizado e construção de uma rede neural utilizando a linguagem Python. Os conceitos de Rede Neural são, de certa forma, bem simples, envolvendo conceitos básicos de Álgebra Linear e Cálculo Diferencial. Traduzir estes conceitos para uma linguagem de programação apresenta algumas armadilhas, ligadas em parte à sintaxe da linguagem usada. Os arquivos aqui depositados foram escritos de maneira a destacar as minúcias exigidas por uma linguagem tão flexivel como a Python. Além disso, fui acrescentando complexidade a cada arquivo com o intuito de deixar o programa cada vez mais completo para programação em Deep Learning.
 
 ### Arquivos programas:
 
