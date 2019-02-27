@@ -10,7 +10,7 @@ Original code from Udacity - nd109 Neural Network
 """
 import numpy as np
 import matplotlib.pyplot as plt
-from functions_lib import sigmoid, hyp_tan, log_error
+from functions_lib import sigmoid, hyp_tan
 from data_UCLA import features, targets, features_test, targets_test
 
 np.random.seed(42)
@@ -22,6 +22,11 @@ epochs =800
 learnrate = 0.1
 
 n_records, n_features = features.shape
+
+# Dados como arrays do numpy
+features = np.array(features.values); targets = np.array(targets)
+features_test = np.array(features_test.values) 
+targets_test  = np.array(targets_test)
 
 errors = []
 last_loss = None
@@ -43,7 +48,7 @@ for e in range(epochs):
     del_W2 = np.zeros(W2.shape)
     del_W3 = np.zeros(W3.shape)
     
-    for x, y in zip(features.values, targets):
+    for x, y in zip(features, targets):
         ## Forward pass ##
         # 1st hidden layer
         h1_in = np.dot(x,W1)      # h = W1.x
@@ -88,7 +93,7 @@ for e in range(epochs):
         last_loss = loss
 
 # Calculate accuracy on test data
-h1_c = hyp_tan(np.dot(x, W1))
+h1_c = hyp_tan(np.dot(features_test, W1))
 h2_c = hyp_tan(np.dot(h1_c, W2))
 out = sigmoid(np.dot(h2_c,W3))
 predictions = out > 0.5
