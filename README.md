@@ -12,8 +12,11 @@ Neste diretório colocarei arquivos que descrevem os meus passos no aprendizado 
 
 * **NN02_TwoHiddenLayer.py** - Um pequeno aperfeiçoamento é feito colocando duas hidden layers, podendo escolher quandos nós cada camada possui. Interessante notar que a programação linear começa a ficar saturada, pois a escrita aumenta muito para acomodar mais variáveis no sistema. Acrescentei o gráfico que apresenta a curva de error do sistema, e para as funções de ativação, utilizei a tangente hiperbólica para as hidden layers e a sigmóide para a sinapse de saída.
 
+* **NN03_nHLayer.py** - Um programa com instruções em série limita muito quando queremos ter a liberdade de construir uma rede com várias camadas com diferentes nós. Tendo base o código anterior, a estrutura das camadas foi colocada em loops, permitindo que o treino e teste sejam feitos a partir da lista definida pelo usuário. Cada elemento da lista define uma camada e o valor define o numero de nós. Para manter o código compartimentado, criei uma lib com as funções para fazer os gráficos. 
+
 ### Arquivos auxiliares:
 
 * **functions_lib.py** - biblioteca com as funções de ativação e funções erros. 
+* **graphics_lib.py** - biblioteca com as funções para os gráficos de Complexidade do Modelo e Acurácia.
 * **data_UCLA.py** - programa que prepara os dados para serem usados na rede neural. Lá se encontram o método usado para normalizar os dados e separá-los em treino e validação do modelo.
 * **requirements.txt** - arquivo com as versões das bibliotecas do python utilizadas, caso queira executar o códigos acima. Utilizar o comando `$ pip install -r requirements.txt` para fazer o download das bibliotecas utilizadas. 
